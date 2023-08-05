@@ -1,0 +1,90 @@
+* {
+    transition: .5s background ease-in-out, .5s color ease-in-out ;
+}
+body {
+    font-family: "Segoe UI", serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background: #3C3B3C;
+    color: WhiteSmoke;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+button {
+    height: 100px;
+    width: 100px;
+    border: 2px inset #bbbbbb;
+    background: #D50842;
+    color: WhiteSmoke;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: .5s background ease, .5s color ease;
+}
+button:hover {
+    background: WhiteSmoke;
+    color: #D50842;
+    transition: .5s background ease, .5s color ease;
+    border: 2px solid transparent;
+    animation: rainbow-border 5s linear infinite;
+}
+@keyframes rainbow-border {
+    0% {
+        border-color: #f00;
+        box-shadow: 0 0 80px #f00;
+    }
+    25% {
+        border-color: #ff0;
+        box-shadow: 0 0 80px #ff0;
+    }
+    50% {
+        border-color: #0f0;
+        box-shadow: 0 0 80px #0f0;
+    }
+    75% {
+        border-color: #00f;
+        box-shadow: 0 0 80px #00f;
+    }
+    100% {
+        border-color: #f00;
+        box-shadow: 0 0 80px #f00;
+    }
+}
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid green;
+    gap: 100px;
+}
+
+.content__box {
+
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: #3C3B3C;
+    color: WhiteSmoke;
+    margin: 0;
+}
